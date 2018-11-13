@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello() -> set:
 	return 'Hello world from Flask!'
 
-@app.route('/search4')
+@app.route('/search4', methods=['POST'])
 def do_search() -> str:
 	return str(search4letters('life, the universe, and everything' , 'eiru!'))
 
@@ -17,4 +17,4 @@ def do_search() -> str:
 def entry_page() -> 'html':
 	return render_template('entry.html' , the_title='Welcome to search4letters on the web!')
 	
-app.run()
+app.run(debug = True)
