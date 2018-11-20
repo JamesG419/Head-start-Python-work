@@ -1,6 +1,6 @@
 
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, escape
 from vsearch import search4letters
 
 app = Flask(__name__)
@@ -29,5 +29,11 @@ def do_search() -> 'html':
 def entry_page() -> 'html':
 	return render_template('entry.html' , the_title='Welcome to search4letters on the web!')
 
+@app.route('/viewlog')
+def view_the_log() -> str:
+	with open('vsearch.txt') as log:
+		contents = log.read()
+	return escape(contents)
+	
 if __name__=='__main__':
 	app.run(debug = True)
