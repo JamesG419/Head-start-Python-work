@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def log_request(req: 'flask_request', res: str) -> None:
 	with open('vsearch.txt', 'a') as log:
-		print(req.form, file = log)
+		print(req.form, req.remote_addr, req.user_agent, res, file = log, sep='|')
 		print(req.remote_addr, file = log)
 		print(req.user_agent, file = log)
 		print(res, file = log)

@@ -1,12 +1,12 @@
-ImmutableMultiDict([('phrase', 'hitchhiker'), ('letters', 'aeiou')])
+ImmutableMultiDict([('phrase', 'hitchhiker'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36|{'e', 'i'}
 127.0.0.1
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
 {'e', 'i'}
-ImmutableMultiDict([('phrase', 'life, the universe, and everything'), ('letters', 'aeiou')])
+ImmutableMultiDict([('phrase', 'life, the universe, and everything'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36|{'e', 'u', 'a', 'i'}
 127.0.0.1
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
-{'e', 'a', 'u', 'i'}
-ImmutableMultiDict([('phrase', 'galaxy'), ('letters', 'xyz')])
+{'e', 'u', 'a', 'i'}
+ImmutableMultiDict([('phrase', 'galaxy'), ('letters', 'xyz')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36|{'y', 'x'}
 127.0.0.1
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
-{'x', 'y'}
+{'y', 'x'}
